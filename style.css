@@ -1,0 +1,255 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    
+   
+}
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+
+.menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+
+
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
+
+img{
+    padding: 9px;
+    margin: 8px;
+}
+
+.menu__list,.title__network{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+    
+}
+.title__network{
+    flex-wrap: wrap;
+}
+
+/*Sessão Title*/
+
+section.title{
+  display: flex;
+  padding: 20px;
+  
+  
+}
+
+.title__profile{
+    height: 80vh;
+    border-radius: 50px;
+    float: right;
+}
+
+.title__container{
+   margin-top: 100px;
+   
+}
+
+/*Sessão About*/
+
+.about{
+    display: flex;
+    padding: 20px;
+    background-color: rgb(181, 123, 235);
+    
+}
+
+.skills__line,.hobbies__line{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+
+}
+.skills__title,.hobbies__title,.academic__title,.experience__section__title{
+    text-align: center;
+}
+
+
+/*Sessão Hobbies*/
+
+.skills__box,.hobbies__box{
+    display: flex;
+    background-color: #FFF;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+
+/* Experiência Acadêmica*/
+.academic__courses{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+button{
+border-radius:5px ;
+}
+
+button:hover{
+    transform: translateY(-3px);
+    
+}
+
+/* experiência*/
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.experience__box{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    padding-bottom: 5rem;
+    
+}
+
+.experience .experience__box:nth-child(1),.experience .experience__box:nth-child(3){
+    flex-direction: column-reverse;
+}
+
+.experiencia__botao--repo,.formcontato__botao{
+    background-color: rgb(181, 123, 235);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.experiencia__botao--demo{
+    background-color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 5px;  
+}
+
+/*Contato*/
+
+.formcontato{
+ display: flex;
+ margin: 20px;
+ flex-wrap: wrap;
+}
+
+/*footeer*/
+
+.formcontato__contacto{
+    display: flex;
+}
+
+.formcontato__form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:50px
+}
+
+.formcontato__form input{
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+input:focus{
+    outline: none;
+}
+
+section.footer{
+   background-color:rgb(181, 123, 235) ;
+   bottom: 0;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   
+  
+}
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (max-width: 768px) {
+    .menu__list{
+        display: none;
+    }
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
